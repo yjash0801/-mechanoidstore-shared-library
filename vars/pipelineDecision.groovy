@@ -3,13 +3,13 @@
 def decidePipeline(Map configMap){
     application = configMap.get("application")
     switch(GIT_BRANCH) {
-        case 'nodejsVM'
+        case 'nodejsVM':
             nodejsVM(configMap)
             break
-        case 'javaVM'
+        case 'javaVM':
             javaVM(configMap)
             break
-        case 'nodejsEKS'
+        case 'nodejsEKS':
             nodejsEKS(configMap)
             break
         default:
