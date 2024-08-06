@@ -66,7 +66,7 @@ def call(Map configMap){
                         groupId: 'com.mechanoidstore',
                         version: "${packageVersion}",
                         repository: "${configMap.component}",
-                        credentialsId: pipelineGlobals.nexusCredentials(),
+                        credentialsId: 'nexus-auth',
                         artifacts: [
                             [artifactId: "${configMap.component}",
                             classifier: '',
