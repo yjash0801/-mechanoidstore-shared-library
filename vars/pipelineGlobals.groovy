@@ -1,7 +1,3 @@
 static final String nexusURL(){
-    return "172.31.38.156"
+    return "172.31.38.156:8081"
 }
-
-// static final String nexusCredentials(){
-//     return "nexus-auth"
-// }
